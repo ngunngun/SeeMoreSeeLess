@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeeMoreLess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dl6-bt-t89">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lZY-uy-dee">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPI-ao-aws">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lZY-uy-dee" secondAttribute="bottom" id="LER-1V-EF3"/>
+                                    <constraint firstAttribute="trailing" secondItem="lZY-uy-dee" secondAttribute="trailing" id="Od0-1N-4Pq"/>
+                                    <constraint firstItem="lZY-uy-dee" firstAttribute="centerX" secondItem="Dl6-bt-t89" secondAttribute="centerX" id="S7g-r8-MOI"/>
+                                    <constraint firstItem="lZY-uy-dee" firstAttribute="leading" secondItem="Dl6-bt-t89" secondAttribute="leading" id="bh1-mH-qpG"/>
+                                    <constraint firstItem="lZY-uy-dee" firstAttribute="top" secondItem="Dl6-bt-t89" secondAttribute="top" id="hzg-YD-XzQ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="y9P-ub-VGT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Upo-f0-nJU"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dl6-bt-t89" secondAttribute="bottom" id="CVj-R4-oE2"/>
+                            <constraint firstItem="Dl6-bt-t89" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VOR-ac-rQV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dl6-bt-t89" secondAttribute="trailing" id="Wxv-h2-NZB"/>
+                            <constraint firstItem="Dl6-bt-t89" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e5F-cw-Kl6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Dl6-bt-t89" id="5GO-8q-Tgs"/>
+                        <outlet property="stackView" destination="lZY-uy-dee" id="pKt-ol-PAI"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
